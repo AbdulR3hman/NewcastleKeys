@@ -1,0 +1,34 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head lang = "en">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>{% block title %}{{context.sitename|upper}}{% endblock title %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="{{context.sitename}}"/>
+<!--
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+-->
+
+ <link rel="shortcut icon" href="{{assets}}/images/key.png"/>
+<!--
+    <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png">
+-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" media="screen"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.css"/>
+    <![endif]-->
+    
+
+{% block css %}
+<link rel="stylesheet" href="{{assets}}/css/layout.css?id=4"/>
+<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+{% endblock css %}
+</head>
+<!--The closing html is within the footer-->

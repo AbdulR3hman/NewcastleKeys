@@ -1,0 +1,13 @@
+{
+    "name": "AbdulRehman/newcastle keys",
+    "description": "Newcastle Keys Project - Internet Technologies",
+    "authors": [
+        {
+            "name": "Abdul Al-Faraj",
+            "email": "a.al-faraj@ncl.ac.ul"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.*"
+    }
+}

@@ -1,0 +1,70 @@
+{% include "header.twig" %}
+
+{% block navContainer %}
+	{% include "navContainer.twig" %}
+{% endblock navContainer %}
+<body>
+	<div class = "row">
+	{% include "sidebar.twig" %}
+
+	{% block removeusers %}
+		<div class="col-sm-8">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						History Events
+					</h3>
+				</div>
+				<div class="panel-body">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Type</th>
+									<th>Date</th>
+									<th>Time</th>
+									<th>User Used</th>
+									<th>Key Used</th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for event in events %}
+								<tr>
+									<td>{{event.id}}</td>
+									<td>{{event.type}}
+									<td>{{event.date}}</td>
+									<td>{{event.time}}</td>
+									<td>{{event.username}}</td>
+									<td>{{event.keyname}}</id>
+								</tr>
+								
+							{% endfor %}
+							</tbody>
+						</table>
+					<ul class="pagination">
+						{% for i in minPages..maxPages %}
+							<li><a href="{{base}}/events?page={{i}}">{{i}}</a></li>
+						{% endfor %}
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% block notifications %}
+		<div class="col-sm-4">
+			{% if state is defined %}
+		 	<div class="alert alert-warning">{{state}}</div>
+			{% endif %}
+		</div>
+	{% endblock notifications %}
+	
+{% endblock removeusers %}
+</body>
+<script type="text/javascript">
+	$('.dropdown-toggle').dropdown();
+</script>
+{% include "footer.twig" %}
+
+

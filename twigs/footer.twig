@@ -1,0 +1,31 @@
+	{% block pagefooter %}
+	{% block footer %}
+	<div class = "row">
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+				<p id = "navbar-text">
+					Abdul Al-Faraj, Newcaslte University Key Management System...... 2013
+				</p>
+		</div>
+	</div>
+	{% endblock footer %}
+
+	{% block scripts %}
+		
+		<script src="{{assets}}/js/jquery.js"></script>  
+		<script src="{{assets}}/js/bootstrap.min.js"></script>  
+		<script src="{{assets}}/js/bootbox.min.js"></script>
+
+	        {% endblock scripts %}
+	        <script>
+	        {% block setup %}
+	        {% endblock setup %}
+
+	        var base = '{{base}}';
+
+	        $(function(){
+	        	{% block onload %}
+	        	{% endblock onload %}
+	        })
+	        </script>
+	        {% endblock pagefooter %}
+</html>

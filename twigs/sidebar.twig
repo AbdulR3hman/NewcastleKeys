@@ -1,0 +1,21 @@
+{% block sideBarNav %}
+<div class="col-sm-2">
+    <div class="list-group">
+    	<div class= "keys">
+	        <a class="list-group-item active"> Keys </a>
+	        <a class="list-group-item" href="{{base}}/addkeys"> Add Keys </a>
+	        <a class="list-group-item" href="{{base}}/addlock"> Add Locks</a>
+	        <a class="list-group-item" href="{{base}}/displaykeys"> Manage Keys</a>
+        </div >
+        <div class= "staff">
+	        <a class="list-group-item active"> staff </a>
+	        <a class="list-group-item" href="{{base}}/addstaff"> Add Staff </a>
+	        <a class="list-group-item" href="{{base}}/managestaff"> Manage Staff </a>
+        </div>
+        <div class= "History">
+	        <a class="list-group-item active"> History </a>
+	        <a class="list-group-item" href="{{base}}/events"> History </a>
+        </div>
+    </div>
+</div>
+{% endblock sideBarNav %}

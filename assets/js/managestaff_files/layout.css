@@ -1,0 +1,41 @@
+/* Layout for desktop version */
+
+body {
+	font-family : sans-serif;
+	font-size: 15px;
+	background-color: #BFEEEF;
+}
+
+.navbar-inverse{
+	font-family: 'Finger Paint', cursive;
+	box-shadow: 5px 5px 5px #888;
+}
+.navbar-default {
+    background-color: #292421;
+    border-color: #c0392b;
+}
+
+p#navbar-text{
+    color: #C67171;
+    text-align: center;
+    padding-top: 10px
+}
+.loginformclass{
+	font-family: 'Finger Paint', cursive;
+}
+
+p#indexlogin{
+	height:80px;
+	width:100px;
+}
+
+.col-sm-2{
+  font-family:  'Finger Paint', cursive;
+}
+#fieldset{
+  background-color: #BFEEEF;
+  font-family: 'Finger Paint', cursive;
+}
+
+
+

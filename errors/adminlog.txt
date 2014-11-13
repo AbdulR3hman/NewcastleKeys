@@ -1,0 +1,72 @@
+
+--------------------------------------ERROR REPORT BEGIN-------------------------------------
+
+Time of the error: Tuesday 17th of December 2013 11:06:30 PM
+System Error - Unable to find template "profile" (looked into: C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys\twigs).  
+
+Type : Twig_Error_Loader
+
+C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys\vendor\twig\twig\lib\Twig\Loader\Filesystem.php Line 202
+
+
+: file => "C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys\class\local.php"
+: line => "164"
+: function => "telladmin"
+: class => "Local"
+
+
+: basepath => "C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys"
+: basedname => "/NewcastleKeys"
+: errignore => ""
+: wasignored => ""
+: debug => "1"
+: ajax => ""
+
+
+: 0 => "abdul.alfaraj@ncl.ac.uk"
+
+
+
+
+: base => "/NewcastleKeys"
+: assets => "/NewcastleKeys/assets"
+
+
+: page => "myprofile"
+: type => "->"
+
+
+: 0 => "Unable to find template "profile" (looked into: C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys\twigs). "
+: 1 => "Twig_Error_Loader"
+: 2 => "C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys\vendor\twig\twig\lib\Twig\Loader\Filesystem.php"
+: 3 => "202"
+
+
+: function => "exception_handler"
+: class => "Local"
+
+
+: basepath => "C:\Users\AbdulRehman\SkyDrive\htdocs\NewcastleKeys"
+: basedname => "/NewcastleKeys"
+: errignore => ""
+: wasignored => ""
+: debug => "1"
+: ajax => ""
+
+
+: 0 => "abdul.alfaraj@ncl.ac.uk"
+
+
+
+
+: base => "/NewcastleKeys"
+: assets => "/NewcastleKeys/assets"
+
+
+: page => "myprofile"
+: type => "->"
+
+
+
+
+--------------------------------------ERROR REPORT END-------------------------------------

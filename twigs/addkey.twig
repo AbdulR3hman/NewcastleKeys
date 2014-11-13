@@ -1,0 +1,82 @@
+{% include "header.twig" %}
+
+{% block navContainer %}
+	{% include "navContainer.twig" %}
+{% endblock navContainer %}
+<body>
+<div class = "row">
+	{% include "sidebar.twig" %}
+
+	{% block addkeys %}
+	<div class="col-sm-6">
+		<form action="{{base}}/addingkeys" method="post" class="well">
+			<fieldset>
+				<!-- Form Name -->
+				<legend>Add Keys</legend>
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="keyname">Key Name</label>
+					<div class="controls">
+						<!-- Allow only letters/numbers whitespaces with range of 4 to 15 letters/numbers-->
+						<input id="keyname" pattern = "[\a-zA-Z0-9 \s]{4,15}" name="keyname" placeholder="Med School Key" class="input-medium" required="" type="text">
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="keyID">Key ID</label>
+					<div class="controls">
+						<!-- Only allow codes that are capitals and number-->
+						<input id="keyID" pattern="[A-Z0-9]{7}" name="keyID" placeholder="1SACDFW Capitals/NO." class="input-medium" required="" type="text">
+					</div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="control-group">
+					<label class="control-label" for="keytype">Key Type</label>
+					<div class="controls" >
+						<select id="keytype" name="keytype" required="" class="input-medium">
+							<option>Master</option>
+							<option>SubMaster</option>
+						</select>
+					</div>
+				</div>
+				{{dumbing}}
+				<!-- Select Basic -->
+				<div class="control-group">
+					<label class="control-label" for="locker">Locker</label>
+					<div class="controls">
+						<select id="locker" name="locker" class="input-medium">
+							{% for lock in locks %}
+								<option>{{lock.name}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+				<!-- Button -->
+				<div class="control-group">
+					<label class="control-label" for="sumbit"></label>
+					<div class="controls">
+						<button id="sumbit" name="sumbit" class="btn btn-inverse-" type ="submit">Submit</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	{% endblock addkeys %}
+</div>
+
+	{% block notifications %}
+	<div class="col-sm-4">
+		{% if state is defined and statecode == 1  %}
+				<div class="alert alert-success">{{state}}</div>
+		{% endif %}
+		{% if state is defined and statecode == 0  %}
+				<div class="alert alert-danger">{{state}}</div>
+		{% endif %}
+	</div>
+	{% endblock notifications %}
+	
+</body>
+
+{% include "footer.twig" %}

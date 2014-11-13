@@ -1,0 +1,219 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head><body>array(1) {
+  [0]=&gt;
+  string(8) "password"
+}
+
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><!--<![endif]-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NEWCASTLEKEYS</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NewcastleKeys">
+<!--
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+-->
+
+ <link rel="shortcut icon" href="http://localhost/NewcastleKeys/assets/images/key.png">
+<!--
+    <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png">
+-->
+    <link rel="stylesheet" href="managestaff_files/bootstrap.css" media="screen">
+    <link href="managestaff_files/font-awesome.css" rel="stylesheet">
+    
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.css"/>
+    <![endif]-->
+    
+
+<link rel="stylesheet" href="managestaff_files/layout.css">
+<link href="managestaff_files/css.css" rel="stylesheet" type="text/css">
+
+<!--The closing html is within the footer-->
+<div class="navContainer">
+		<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://localhost/NewcastleKeys/">NewcastleKeys</a>
+		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="http://localhost/NewcastleKeys/">Home</a></li>
+				<li><a href="http://localhost/NewcastleKeys/about">About</a></li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Command<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://localhost/NewcastleKeys/info">Info</a></li>
+						<li><a href="http://localhost/NewcastleKeys/admin">Admin</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="btn-group open">
+					
+					<a class="btn btn-primary" href="http://localhost/NewcastleKeys//logout"><i class="fa fa-user fa-fw"></i> Logout</a>
+				</div>
+			</form>
+		</div>
+	</nav>
+	
+	        <!--[if lt IE 9]>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script src="managestaff_files/jquery-2.js"></script>
+        <!--<![endif]-->
+        <script src="managestaff_files/bootstrap.js"></script>
+        <script src="managestaff_files/bootbox.js"></script>
+
+        
+        <script>
+                
+        var base = '/NewcastleKeys';
+
+        $(function(){
+        	        	        })
+        </script>
+    </div>
+
+
+	<div class="row">
+
+		<div class="col-sm-2">
+    <div class="list-group">
+    	<div class="keys">
+	        <a class="list-group-item active"> Keys </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/addkey"> Add Keys </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/displaykeys"> Manage Keys</a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/issuekey"> Issue Keys </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/returnkey"> Return Keys </a>
+        </div>
+        <div class="staff">
+	        <a class="list-group-item active"> staff </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/addstaff"> Add Staff </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/managestaff"> Manage Staff </a>
+        </div>
+        <div class="History">
+	        <a class="list-group-item active"> History </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/keysHisotry"> Keys History </a>
+	        <a class="list-group-item" href="http://localhost/NewcastleKeys/staffHisotry"> Staff History </a>
+        </div>
+    </div>
+</div>
+
+		<div class="col-sm-6 form">
+			<form action="/NewcastleKeys/addmembers" method="post" class="well">
+				<fieldset>
+					<!-- Form Name -->
+					<legend>Add Staff</legend>
+
+					<!-- First Name-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="firstname">First Name</label>
+							<div class="controls">
+								<input style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); padding-right: 16px; background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" id="firstname" name="firstname" placeholder="Shakeer" class="input-medium" required="" type="text">
+							</div>
+						</div>
+					</div>
+
+					<!-- Last Name-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="lastname">Last Name</label>
+							<div class="controls">
+								<input id="lastname" name="lastname" placeholder="Smirthsons" class="input-medium" type="text">
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="email">Email</label>
+							<div class="controls">
+								<input id="email" pattern="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" name="email" placeholder="youremail@mail.com" class="input-xlarge" required="" type="email">
+							</div>
+						</div>
+					</div>
+					<!-- Password input-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="password">Password</label>
+							<div class="controls">
+								<input style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); padding-right: 16px; background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" id="password" name="password" placeholder="**************" class="input-xlarge" required="" type="password">
+								<p class="help-block"><small>Should include at least 1 digit and rang between 7 - 14 character</small></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Access Level Radios -->
+					<div class="col-lg-6 col-lg-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="accesslevel">Access Level</label>
+							<div class="controls">
+								<label class="radio" for="accesslevel-0">
+									<input name="accesslevel" id="accesslevel-0" value="0" checked="checked" required="required" type="radio">
+									Level 1
+								</label>
+								<label class="radio" for="accesslevel-1">
+									<input name="accesslevel" id="accesslevel-1" value="1" required="required" type="radio">
+									Level 2
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="row">
+						<div class="span6">
+							<div class="control-group">
+								<label class="control-label" for="sumbit"></label>
+								<div class="controls">
+									<button id="sumbit" name="sumbit" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+		<div class="col-sm-4">
+				<div class="alert alert-success">Successfully added member to the database with ID: 36</div>
+			</div>
+	
+
+			<div class="row">
+		<div class="navbar navbar-default navbar-fixed-bottom">
+				<p id="navbar-text">
+					Abdul Al-Faraj, Newcaslte University Key Management System...... 2013
+				</p>
+		</div>
+	</div>
+	
+			
+		<script src="managestaff_files/jquery.js"></script>  
+		<script src="managestaff_files/bootstrap_002.js"></script>  
+		<script src="managestaff_files/bootbox.js"></script>
+
+	        	        <script>
+	        	        
+	        var base = '/NewcastleKeys';
+
+	        $(function(){
+	        		        		        })
+	        </script>
+	        
+<script src="managestaff_files/livereload.js"></script></body></html>

@@ -1,0 +1,23 @@
+
+{# Might not want navigation bar on a login page... #}
+{% block login %}
+<div class="loginformclass">
+	{% if logerr is defined %}
+	<h3 class="red">{{logerr}}</h3>
+	{% endif %}
+	<form action="{{base}}/login" method="post" class="well">
+		<fieldset>
+			<legend>Login</legend>
+			<div class="form-group">
+				<label for="un" class="control-label">User Name</label>
+				<input type="text" id="un" name="email" placeholder="example@website.com" class="form-control" required="required" autofocus/>
+			</div>
+			<div class="form-group">
+				<label for="pw" class="control-label">Password</label>
+				<input type="password" id="pw" name="password" placeholder="**************" class="form-control" required="required"/>
+			</div>
+		</fieldset>
+		<button class="btn btn-primary" type="submit">Login</button>
+	</form>
+</div>
+{% endblock login %}

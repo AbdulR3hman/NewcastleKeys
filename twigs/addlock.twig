@@ -1,0 +1,51 @@
+{% include "header.twig" %}
+
+{% block navContainer %}
+	{% include "navContainer.twig" %}
+{% endblock navContainer %}
+<body>
+<div class = "row">
+	{% include "sidebar.twig" %}
+
+	{% block addlocks %}
+	<div class="col-sm-6">
+		<form action="{{base}}/addlocks" method="get" class="well">
+			<fieldset>
+				<!-- Form Name -->
+				<legend>Add Locks</legend>
+				<!-- Text input-->
+				<div class="control-group">
+					<label class="control-label" for="lockname">Lock Name</label>
+					<div class="controls">
+						<!-- Allow only letters/numbers whitespaces with range of 4 to 15 letters/numbers-->
+						<input id="lockname" pattern = "[\a-zA-Z0-9 \s]{4,20}" name="lockname" placeholder="Lab Door" class="input-medium" required="" type="text">
+					</div>
+				</div>
+
+				<!-- Button -->
+				<div class="control-group">
+					<label class="control-label" for="sumbit"></label>
+					<div class="controls">
+						<button id="sumbit" name="sumbit" class="btn btn-inverse-" type ="submit">Submit</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	{% endblock addlocks %}
+</div>
+
+	{% block notifications %}
+	<div class="col-sm-4">
+		{% if state is defined and statecode == 1  %}
+				<div class="alert alert-success">{{state}}</div>
+		{% endif %}
+		{% if state is defined and statecode == 0  %}
+				<div class="alert alert-danger">{{state}}</div>
+		{% endif %}
+	</div>
+	{% endblock notifications %}
+	
+</body>
+
+{% include "footer.twig" %}

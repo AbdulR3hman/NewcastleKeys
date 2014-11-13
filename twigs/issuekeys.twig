@@ -1,0 +1,68 @@
+{% include "header.twig" %}
+
+{% block navContainer %}
+{% include "navContainer.twig" %}
+{% endblock navContainer %}
+<body>
+	<div class = "row">
+		{% include "sidebar.twig" %}
+		{% block issuekeys %}
+		<div class="col-sm-6">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Users of Newcastle University
+					</h3>
+				</div>
+				<div class="panel-body">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Issue</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for user in users %}
+							<tr>
+								<td>{{user.id}}</td>
+								<td>{{user.firstname}}
+									<td>{{user.lastname}}</td>
+									<td>
+										<a href="{{base}}/issuing?keyid={{keyid}}&&userid={{user.id}}">
+											<button type="button" class="btn btn-success">Issue to this user</button>
+										</a>
+									</td>
+								</tr>
+								
+								{% endfor %}
+							</tbody>
+						</table>
+						<ul class="pagination">
+							{% for i in minPages..maxPages %}
+							<li><a href="{{base}}/issue?id={{keyid}}&&page={{i}}">{{i}}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endblock issuekeys %}
+	</div>
+
+	{% block notifications %}
+	<div class="col-sm-4">
+		{% if state is defined and statecode == 1  %}
+		<div class="alert alert-success">{{state}}</div>
+		{% endif %}
+		{% if state is defined and statecode == 0  %}
+		<div class="alert alert-danger">{{state}}</div>
+		{% endif %}
+	</div>
+	{% endblock notifications %}
+	
+</body>
+
+{% include "footer.twig" %}

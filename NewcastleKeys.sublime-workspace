@@ -1,0 +1,713 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"er",
+				"error"
+			],
+			[
+				"even",
+				"events"
+			],
+			[
+				"uns",
+				"unset"
+			],
+			[
+				"issu",
+				"issued"
+			],
+			[
+				"book",
+				"book1"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"share",
+				"sharedStateSet"
+			],
+			[
+				"add",
+				"addval"
+			],
+			[
+				"shared",
+				"sharedStateSet"
+			],
+			[
+				"sha",
+				"sharedState"
+			],
+			[
+				"shar",
+				"sharesState"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"use",
+				"user"
+			],
+			[
+				"edit",
+				"editkey"
+			],
+			[
+				"addke",
+				"addkey"
+			],
+			[
+				"lo",
+				"local"
+			],
+			[
+				"stor",
+				"store"
+			],
+			[
+				"disp",
+				"dispense"
+			],
+			[
+				"Stat",
+				"StateCode"
+			],
+			[
+				"new",
+				"newUSER"
+			],
+			[
+				"matchi",
+				"matchingEmails"
+			],
+			[
+				"user",
+				"userpassed"
+			],
+			[
+				"dis",
+				"dispense"
+			],
+			[
+				"ac",
+				"accesslevel"
+			],
+			[
+				"lastnam",
+				"lastname"
+			],
+			[
+				"first",
+				"firstname"
+			],
+			[
+				"ed",
+				"editstaff"
+			],
+			[
+				"lastn",
+				"lastname"
+			],
+			[
+				"manage",
+				"managestaff"
+			],
+			[
+				"manag",
+				"managestaff"
+			],
+			[
+				"has",
+				"hasuser"
+			],
+			[
+				"last",
+				"lastPages"
+			],
+			[
+				"mat",
+				"match2"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"display",
+				"displaykeys"
+			],
+			[
+				"max",
+				"maxPages"
+			],
+			[
+				"bean",
+				"beansCount"
+			],
+			[
+				"limi",
+				"limitKeys"
+			],
+			[
+				"next",
+				"nextPage"
+			],
+			[
+				"page",
+				"pageNumber"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"strin",
+				"stringData"
+			],
+			[
+				"PHP",
+				"PHP_EOL"
+			],
+			[
+				"Patien",
+				"patient"
+			],
+			[
+				"TE",
+				"text-indent"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"ali",
+				"alias"
+			],
+			[
+				"class",
+				"class	class …"
+			],
+			[
+				"alia",
+				"aliases"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"P",
+				"PKGPATH"
+			],
+			[
+				"names",
+				"namespace"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "errors/adminlog.txt",
+			"settings":
+			{
+				"buffer_size": 1590,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "twigs/admin.twig",
+			"settings":
+			{
+				"buffer_size": 1452,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 4566,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "twigs/navContainer.twig",
+			"settings":
+			{
+				"buffer_size": 1960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "class/index.php",
+			"settings":
+			{
+				"buffer_size": 2688,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 143.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ht",
+				"Snippet: html"
+			],
+			[
+				"Snippet: ",
+				"Snippet: extends"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fet",
+				"File: New View into File"
+			],
+			[
+				"",
+				"Sort Lines"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 80.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/NewcastleKeys/class/profile.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/profile.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/staff.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/admin.php",
+		"/C/xampp/htdocs/NewcastleKeys/index.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/navContainer.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/keys.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/model_user.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/context.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/history.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/admin.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/local.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/history.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/managekeys.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/sidebar.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/backbone.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/keys.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/index.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/addstaff.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/editkey.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/addkey.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/managestaff.twig",
+		"/C/xampp/htdocs/NewcastleKeys/assets/css/layout.css",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/issuekeys.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/about.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/history.class",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/addlock.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/editstaff.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/config.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/userlogin.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/website.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/pagenotfound.twig",
+		"/C/xampp/htdocs/NewcastleKeys/class/initDB.php",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/index.twig",
+		"/C/xampp/htdocs/NewcastleKeys/errors/adminlog.txt",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/login.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/header.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/footer.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/sample.twig",
+		"/C/xampp/htdocs/NewcastleKeys/framework.komodoproject",
+		"/C/Users/ABDULR~1/AppData/Local/Temp/7zE472D.tmp/index.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/loginform.twig",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/form.twig",
+		"/C/Users/AbdulRehman/Sublime/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/NewcastleKeys/twigs/addkeys.twig",
+		"/C/xampp/htdocs/libraries/bootstrap-3.0.2/examples/theme/index.html",
+		"/C/xampp/htdocs/NewcastleKeys/class/csrfguard.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/statuscodes.php",
+		"/C/xampp/htdocs/NewcastleKeys/class/siteaction.php",
+		"/C/xampp/htdocs/laravel/app/routes.php",
+		"/C/xampp/htdocs/laravel/app/models/Patient.php",
+		"/C/xampp/htdocs/laravel/laravel.sublime-project",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_26_151200_create_appointments_table.php",
+		"/C/xampp/htdocs/laravel/app/models/Appointment.php",
+		"/C/xampp/htdocs/laravel/app/controllers/NamesController.php",
+		"/C/xampp/htdocs/laravel/app/views/patients/create.blade.php",
+		"/C/xampp/htdocs/laravel/app/views/layouts/deafult.blade.php",
+		"/C/xampp/htdocs/laravel/app/controllers/PatientController.php",
+		"/C/xampp/htdocs/laravel/composer.json",
+		"/C/xampp/htdocs/laravel/app/models/Model_test.php",
+		"/C/xampp/htdocs/laravel/app/assests/css/layout.php",
+		"/C/xampp/htdocs/laravel/app/views/patiens/create.blade.php",
+		"/C/xampp/htdocs/laravel/app/repositories/DbPersonRepository.php",
+		"/C/xampp/htdocs/laravel/app/models/Clinic.php",
+		"/C/xampp/htdocs/laravel/app/repositories/DbPatientRepository.php",
+		"/C/xampp/htdocs/laravel/app/repositories/AppointmentRepositoryInterface.php",
+		"/C/xampp/htdocs/laravel/app/repositories/DbPatientRepositoryphp",
+		"/C/xampp/htdocs/laravel/app/models/test.php",
+		"/C/xampp/htdocs/laravel/app/models/Person.php",
+		"/C/xampp/htdocs/laravel/app/models/Model.php",
+		"/C/xampp/htdocs/laravel/app/repositories/PersonRepositoryInterface.php",
+		"/C/xampp/htdocs/laravel/app/repositories/PatientRepositoryInterface.php",
+		"/C/xampp/htdocs/laravel/app/database/seeds/DatabaseSeeder.php",
+		"/C/Users/AbdulRehman/SkyDrive/htdocs/aam.dev/db_ini/tb_patients.php",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_26_145921_create_medics_table.php",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_26_142000_create_patients_table.php",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_26_145513_create_addresses_table.php",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_26_145554_create_clinics_table.php",
+		"/C/xampp/htdocs/laravel/app/database/migrations/statesAbberviations",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_26_141446_create_users_table.php",
+		"/C/xampp/htdocs/laravel/app/database/migrations/2013_11_23_162208_create_people_table.php",
+		"/C/Users/AbdulRehman/Desktop/page.twig",
+		"/C/Users/AbdulRehman/Sublime/Data/Packages/User/.sublime-build",
+		"/C/Users/ABDULR~1/AppData/Local/Temp/7zE54D3.tmp/page.twig",
+		"/C/Users/AbdulRehman/Sublime/Data/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/NewcastleKeys/assets/js/bgfade.js",
+		"/C/xampp/htdocs/NewcastleKeys/.htaccess",
+		"/C/Users/AbdulRehman/Sublime/Data/Packages/User/HTML (Twig).sublime-settings",
+		"/C/xampp/htdocs/laravel/app/controllers/BaseController.php",
+		"/C/xampp/htdocs/laravel/app/tests/ExampleTest.php",
+		"/C/xampp/htdocs/laravel/app/controllers/HomeController.php",
+		"/C/Users/AbdulRehman/Sublime/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Downloads/TutsPlus - The MVC Mindset with Jeffrey Way - ICARUS/project-exercise/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/laravel/vendor/autoload.php",
+		"/C/xampp/htdocs/laravel/vendor/composer/autoload_files.php",
+		"/C/xampp/htdocs/laravel/vendor/composer/installed.json",
+		"/C/xampp/htdocs/laravel/app/views/create.blade.php",
+		"/C/xampp/htdocs/laravel/app/controllers/PagesController.php",
+		"/C/xampp/htdocs/laravel/app/views/hello.blade.php",
+		"/C/xampp/htdocs/myFramework/Packages/Pulse/Classes/Pulse.php",
+		"/C/xampp/htdocs/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"accessle",
+			"accesslev",
+			"tellad",
+			"history",
+			"<?",
+			"user",
+			"            $event->key = $key;\n            $event->user = $user;",
+			"history",
+			"sharedState",
+			"admin",
+			"accesslevel",
+			"edit",
+			"delete",
+			"404",
+			"load",
+			"->\n",
+			"'\n",
+			"user",
+			"luser",
+			"divert",
+			"render",
+			"reqrest",
+			"assest",
+			"');\n",
+			"$table->string('firstname');",
+			"3",
+			"mail",
+			"email",
+			"mail",
+			"%}\n",
+			"\n<div class = \"navContainer\">\n	{% block navigation %}\n	<div class=\"navbar navbar-default\">\n		<div class=\"navbar-header\">\n			<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\n				<span class=\"sr-only\">Toggle navigation</span>\n				<span class=\"icon-bar\"></span>\n				<span class=\"icon-bar\"></span>\n				<span class=\"icon-bar\"></span>\n			</button>\n			<a class=\"navbar-brand\" href=\"{{base}}/\">{{context.sitename}}</a>\n		</div>\n		<div class=\"collapse navbar-collapse navbar-ex1-collapse\">\n			<ul class=\"nav navbar-nav\">\n				<li{{page == 'home' ? ' class=\"active\"'}}><a href=\"{{base}}/\">Home</a></li>\n				<li{{page == 'about' ? ' class=\"active\"'}}><a href=\"{{base}}/about\">About</a></li>\n\n				<li class=\"dropdown\">\n					<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Command<b class=\"caret\"></b></a>\n					<ul class=\"dropdown-menu\">\n						<li><a href=\"{{base}}/info\">Info</a></li>\n						<li><a href=\"{{base}}/admin\">Admin</a></li>\n					</ul>\n				</li>\n			</ul>\n			<form class=\"navbar-form navbar-right\">\n				<div class=\"form-group\">\n					<li{{page == 'logout' ? ' class=\"active\"'}}><a href=\"{{base}}/logout\">logout</a></li>\n				</div>\n			</form>\n		</div>\n	</nav>\n	{% endblock navigation %}\n    <!--[if lt IE 9]>\n        <script src=\"http://code.jquery.com/jquery-1.10.2.min.js\"></script>\n        <![endif]-->\n        <!--[if gte IE 9]><!-->\n        <script src=\"http://code.jquery.com/jquery-2.0.3.min.js\"></script>\n        <!--<![endif]-->\n\n        <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>\n        <script src=\"{{assets}}/js/bootbox.min.js\"></script>\n\n        {% block scripts %}\n        {%endblock scripts %}\n\n        <script>\n        {% block setup %}\n        {% endblock setup %}\n\n        var base = '{{base}}';\n\n        $(function(){\n        	{% block onload %}\n        	{% endblock onload %}\n        })\n        </script>\n    </div>\n",
+			"no_italic"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "errors/adminlog.txt",
+					"settings":
+					{
+						"buffer_size": 1590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "twigs/admin.twig",
+					"settings":
+					{
+						"buffer_size": 1452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1022,
+								1022
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig.tmbundle/Syntaxes/HTML (Twig).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 190.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 4566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2571,
+								2571
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1555.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "twigs/navContainer.twig",
+					"settings":
+					{
+						"buffer_size": 1960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								732,
+								732
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig.tmbundle/Syntaxes/HTML (Twig).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "class/index.php",
+					"settings":
+					{
+						"buffer_size": 2688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2105,
+								2105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 987.0,
+		"selected_items":
+		[
+		],
+		"width": 942.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 360.0,
+	"status_bar_visible": true
+}

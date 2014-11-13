@@ -1,0 +1,100 @@
+{% include 'header.twig' %}
+{% include 'navContainer.twig'%}
+<body>
+	<div class = "row">
+		{% include 'sidebar.twig' %}
+		<div class="col-sm-6 form">
+			<form action = "{{base}}/addmembers" method = "post" class="well">
+				<fieldset>
+					<!-- Form Name -->
+					<legend>Add Staff</legend>
+
+					<!-- First Name-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="firstname">First Name</label>
+							<div class="controls">
+								<input id="firstname" name="firstname" placeholder="Shakeer" class="input-medium" required="" type="text">
+							</div>
+						</div>
+					</div>
+
+					<!-- Last Name-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="lastname">Last Name</label>
+							<div class="controls">
+								<input id="lastname" name="lastname" placeholder="Smirthsons" class="input-medium" type="text">
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="email">Email</label>
+							<div class="controls">
+								<input id="email" pattern = "^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" name="email" placeholder="youremail@mail.com" class="input-xlarge" required="" type="email">
+							</div>
+						</div>
+					</div>
+
+					<!-- Password input-->
+					<div class="col-xs-6 col-md-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="password">Password</label>
+							<div class="controls">
+								<input id="password" name="password" placeholder="**************" class="input-xlarge" required="" type="password">
+								<p class="help-block"><small>Should include at least 1 digit and rang between 7 - 14 character</small></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Access Level Radios -->
+					<div class="col-lg-6 col-lg-6 form-group">
+						<div class="control-group">
+							<label class="control-label" for="accesslevel">Access Level</label>
+							<div class="controls">
+								<label class="radio" for="accesslevel-0">
+									<input name="accesslevel" id="accesslevel-0" value="0" checked="checked" required="required" type="radio">
+									Admin Level
+								</label>
+								<label class="radio" for="accesslevel-1">
+									<input name="accesslevel" id="accesslevel-1" value="1" required="required" type="radio">
+									User Level
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class ="row">
+						<div class="span6">
+							<div class="control-group">
+								<label class="control-label" for="sumbit"></label>
+								<div class="controls">
+									<button id="sumbit" name="sumbit" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	
+	{% block notifications %}
+	<div class="col-sm-4">
+		{% if state is defined and statecode == 1  %}
+				<div class="alert alert-success">{{state}}</div>
+		{% endif %}
+		{% if state is defined and statecode == 0  %}
+				<div class="alert alert-danger">{{state}}</div>
+		{% endif %}
+	</div>
+	{% endblock notifications %}
+
+</body>
+
+{% include 'footer.twig' %}

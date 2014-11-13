@@ -1,0 +1,60 @@
+
+<div class = "navContainer">
+	{% block navigation %}
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{base}}/">{{context.sitename}}</a>
+		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li{{page == 'home' ? ' class="active"'}}><a href="{{base}}/">Home</a></li>
+				<li{{page == 'about' ? ' class="active"'}}><a href="{{base}}/about">About</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Command<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="{{base}}/info">Info</a></li>
+						<li><a href="{{base}}/admin">Admin</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="btn-group open">
+					
+					<a class="btn btn-primary" href="{{base}}/logout"><i class="fa fa-user fa-fw"></i> Logout</a>
+				</div>
+			</form>
+		</div>
+	</nav>
+	{% endblock navigation %}
+
+	{% block scripts %}
+        <!--[if lt IE 9]>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <!--<![endif]-->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="{{assets}}/js/bootbox.min.js"></script>
+
+        {%endblock scripts %}
+
+        <script>
+        {% block setup %}
+        {% endblock setup %}
+
+        var base = '{{base}}';
+
+        $(function(){
+        	{% block onload %}
+        	{% endblock onload %}
+        })
+        </script>
+    </div>
+</div>

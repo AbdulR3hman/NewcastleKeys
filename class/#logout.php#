@@ -1,0 +1,37 @@
+<?php
+/**
+ * A class to handle the /logout action. There is no constructor.
+ *
+ * @author Lindsay Marshall <lindsay.marshall@ncl.ac.uk>
+ * @copyright 2012-2013 Newcastle University
+ *
+ */
+    class Logout extends Siteaction
+    {
+/**
+ * Handle a logout - divert to /login rather than return a template
+ *
+ * @param object	$context	The context object for the site
+ * @param object	$local		The local object for the site
+ */
+	public function handle($context, $local)
+	{ # code taken from PHP session_destroy manual page
+	    $_SESSION = array(); # Unset all the session variables.
+
+	    # If it's desired to kill the session, also delete the session cookie.
+	    # Note: This will destroy the session, and not just the session data!
+	    if (ini_get('session.use_cookies'))
+	    {
+		$params = session_get_cookie_params();
+		setcookie(session_name(), '', time() - 42000,
+		    $params["path"], $params["domain"],
+		    $params["secure"], $params["httponly"]
+		);
+	    }
+	    if (session_status() == PHP_SESSION_ACTIVE)
+	    { # no session started yet
+	        session_destroy(); # Finally, destroy the -session.
+            }
+	    $context->divert('/login');
+	}
+    }

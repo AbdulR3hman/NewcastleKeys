@@ -1,0 +1,112 @@
+{% include "header.twig" %}
+
+{% block navContainer %}
+	{% include "navContainer.twig" %}
+{% endblock navContainer %}
+<body>
+	<div class = "row">
+	{% include "sidebar.twig" %}
+
+	{% block removeusers %}
+		<div class="col-sm-8">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Users of Newcastle University
+					</h3>
+				</div>
+				<div class="panel-body">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Email</th>
+									<th>Access Level</th>
+									<th>Edit</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for user in users %}
+								<tr>
+									<td>{{user.id}}</td>
+									<td>{{user.firstname}}
+									<td>{{user.lastname}}</td>
+									<td>{{user.email}}</td>
+									<td>{{user.accesslevel}}</td>
+									<td>
+										<!-- Edit button -->
+											{% if accesslevel == 0 %} <!-- level 0 is the admin level -->
+												<a href="{{base}}/edituser?id={{user.id}}" class="disabled">
+													<button type="button" class="btn btn-danger" >Edit</button> 
+												</a>  
+											{% else %}
+												<a href="{{base}}/edituser?id={{user.id}}">
+													<button type="button" class="btn btn-danger" disabled >Edit</button> 
+												</a> 
+											{% endif %}
+									</td>
+
+									<td>
+										<!-- Button trigger modal -->
+											{% if accesslevel != 0 %} <!-- level 0 is the admin level -->
+												<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal{{user.id}}" disabled>Delete</button>
+											{% else %}
+												<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal{{user.id}}" >Delete</button>
+											{% endif %}
+										<!-- Modal -->
+										<!-- the reason why the modal is followed by the user id is that it generated a unique modal for each user -->
+										<div class="modal fade" id="myModal{{user.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+														<h4 class="modal-title" id="myModalLabel">Are you sure you want to delete "{{user.firstname}} {{user.lastname}}" from database? </h4>
+													</div>
+													<div class="modal-body">
+														<small>Please do note, this action cannot be undone</small>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+														<a href="{{base}}/deleteuser?id={{user.id}}">
+															<button type="button" class="btn btn-danger" href="/">Delete</button> 
+														</a>
+													</div>
+												</div><!-- /.modal-content -->
+											</div><!-- /.modal-dialog -->
+										</div><!-- /.modal -->
+									</td>
+								</tr>
+								
+							{% endfor %}
+							</tbody>
+						</table>
+					<ul class="pagination">
+						{% for i in minPages..maxPages %}
+							<li><a href="{{base}}/managestaff?page={{i}}">{{i}}</a></li>
+						{% endfor %}
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% block notifications %}
+		<div class="col-sm-4">
+			{% if state is defined %}
+		 	<div class="alert alert-success">{{state}}</div>
+			{% endif %}
+		</div>
+	{% endblock notifications %}
+	
+{% endblock removeusers %}
+</body>
+<script type="text/javascript">
+	$('.dropdown-toggle').dropdown();
+</script>
+{% include "footer.twig" %}
+
+
